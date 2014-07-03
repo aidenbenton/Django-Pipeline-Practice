@@ -1,0 +1,99 @@
+@import 'bourbon/_bourbon';
+@import 'neat/neat';
+
+@import 'fonts';
+
+$font-stack:    CooperHewitt-Bold, sans-serif;
+
+$grey-1: #F1F1F1;
+$grey-2: #E5E5E5;
+$grey-3: #CBCBCB;
+$grey-4: #B2B2B2;
+$grey-5: #989898;
+$grey-6: #808080;
+$grey-7: #666666;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-family: $font-stack;
+  	color: $grey-3;
+}
+
+header {
+	@include outer-container;
+
+	padding-top: 100px;
+}
+
+nav {
+	border-bottom: 1px $grey-7;
+}
+
+.title {
+	@include transition (all 0.2s ease-in-out);
+}
+
+nav:hover .title {
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 880px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 1em;
+    }
+}
+
+.title:active {
+	
+}
+
+.title:hover {
+	color: $grey-4;
+    text-decoration: underline;
+}
+
+.title-1 {
+	@extend .title;
+	color: $grey-2;
+}
+
+.title-2 {
+	@extend .title;
+	color: $grey-2;
+}
+
+.title-3 {
+	@extend .title;
+	color: $grey-2;
+}
+
+.title-4 {
+	@extend .title;
+	color: $grey-2;
+}
+
+
+
+main {
+	@include outer-container;
+}

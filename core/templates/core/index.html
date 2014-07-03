@@ -1,0 +1,36 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+{% load compressed %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aiden Benton</title>
+
+	{% compressed_css 'main' %}
+
+<body>
+	<header>
+		<nav>
+			
+			<h1><a class="title-1" href="/">One</a></h1>
+			<h1><a class="title-2" href="/">Two</a></h1>
+			<h1><a class="title-3" href="/">Three</a></h1>
+			<h1><a class="title-4" href="/">Four</a></h1>
+
+		</nav>
+	</header>
+
+	<main>
+		<section>
+
+		</section>
+
+    </main>
+
+	<script src="{{ STATIC_PREFIX }}portfolio/js/jquery-2.1.1.min.js"></script>
+	<script src="{{ STATIC_PREFIX }}portfolio/js/background.js"></script>
+	
+</body>
+</html>
