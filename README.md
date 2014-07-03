@@ -1,1 +1,1 @@
-Django Pipeline Testing, Sass Testing
+Django Pipeline Practive, Sass Practice
