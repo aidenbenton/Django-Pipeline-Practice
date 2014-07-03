@@ -1,1 +1,1 @@
-Django Pipeline Practive, Sass Practice
+Django Pipeline Practice, Sass Practice
